@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <title>Mustafa TV</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="brand-mark">▶</span><div><b>MUSTAFA TV</b><small>Kolay TV keyfi</small></div></div>
+    <span class="live"><i></i> CANLI YAYIN</span>
+  </header>
+  <main>
+    <section class="player-wrap">
+      <div class="player-head"><div><span class="eyebrow">ŞİMDİ İZLİYORSUN</span><h1 id="currentTitle">Bir kanal seçin</h1></div><button id="fullBtn" class="full-btn" type="button">⛶ Tam ekran</button></div>
+      <div class="video-box" id="videoBox">
+        <video id="video" controls playsinline autoplay></video>
+        <div id="placeholder" class="placeholder"><div class="play-big">▶</div><b>İzlemek için aşağıdan bir kanal seçin</b><small>Yayın açılmazsa başka bir kanal deneyin.</small></div>
+      </div>
+      <p id="status" class="status" aria-live="polite">Kanal seçilmeyi bekliyor.</p>
+    </section>
+    <section class="channels">
+      <div class="section-title"><div><span class="eyebrow">KANALLAR</span><h2>Televizyon</h2></div><input id="search" type="search" placeholder="Kanal ara…" aria-label="Kanal ara"></div>
+      <nav id="filters" class="filters" aria-label="Kanal kategorileri">
+        <button class="filter active" data-filter="Tümü">Tümü</button><button class="filter" data-filter="Ulusal">Ulusal</button><button class="filter" data-filter="Haber">Haber</button><button class="filter" data-filter="TRT">TRT</button>
+      </nav>
+      <div id="channelGrid" class="channel-grid"></div>
+      <p class="fineprint">Yayın adresleri üçüncü taraf kaynaklardan gelebilir; bazı yayınlar zamanla kapanabilir veya tarayıcıda oynatmaya izin vermeyebilir. Resmî yayın sayfaları en güvenilir alternatiftir.</p>
+    </section>
+  </main>
+  <footer>Mustafa TV · Ücretsiz kanal arayüzü</footer>
+  <script src="script.js"></script>
+</body>
+</html>
