@@ -1,0 +1,28 @@
+#EXTM3U
+# TV1 - Nexonic kaynağından community etiketi olmayan Türkçe yayınlar
+#EXTINF:-1 tvg-id="EdessaTV.tr@SD" tvg-name="Edessa TV" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Entertainment",Edessa TV
+https://canli.edessatv.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Ekoturk.tr@SD" tvg-name="Ekoturk" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / News",Ekoturk
+https://cdn.ekoturk.net/hls/master.m3u8
+#EXTINF:-1 tvg-id="GZT.tr@SD" tvg-name="GZT" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Documentary",GZT
+https://gzttv-live.lg.mncdn.com/gzttv-live/gzttv/playlist.m3u8
+#EXTINF:-1 tvg-id="IlkeTV.tr@HD" tvg-name="Ilke TV" tvg-country="TR" tvg-language="Turkish;Kurdish" group-title="EK TÜRKİYE / General",Ilke TV
+https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
+#EXTINF:-1 tvg-id="PowerDance.tr@SD" tvg-name="Power Dance" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Music",Power Dance
+https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="PowerTV.tr@SD" tvg-name="Power TV" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / General",Power TV
+https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="PowerTurkAkustik.tr@SD" tvg-name="PowerTurk Akustik" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Music",PowerTurk Akustik
+https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="PowerTurkSlow.tr@SD" tvg-name="PowerTurk Slow" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Music",PowerTurk Slow
+https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="PowerTurkTaptaze.tr@SD" tvg-name="PowerTurk Taptaze" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Music",PowerTurk Taptaze
+https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TJKTV.tr@SD" tvg-name="TJK TV" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Sports",TJK TV
+https://tjktv-live.tjk.org/tjktv.m3u8
+#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Culture",TRT 2
+https://tv-trt2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTSpor.tr@SD" tvg-name="TRT Spor" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / Sports",TRT Spor
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TVDen.tr@SD" tvg-name="TV Den" tvg-country="TR" tvg-language="Turkish" group-title="EK TÜRKİYE / General",TV Den
+http://canli.tvden.com.tr/hls/live.m3u8
