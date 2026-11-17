@@ -1,0 +1,20 @@
+#EXTM3U
+# M3U8 Player Türkiye sayfasında browser-ready olarak gösterilen ek yerel yayınlar.
+# Kaynak sayfa: https://m3u8-player.net/tr/free-turkey-iptv-playlist/
+# Page 1'de görünen ve mevcut TV1 ulusal kanal listesinde bulunmayan yayınlar.
+# Kaynağın 24/60 browser-ready dediği kayıtların yalnızca sayfada görünür ilk bölümünden seçilmiştir.
+
+#EXTINF:-1 tvg-name="Aksu TV" group-title="M3U8 PLAYER / TÜRKİYE",Aksu TV
+https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
+#EXTINF:-1 tvg-name="Alanya Posta TV" group-title="M3U8 PLAYER / TÜRKİYE",Alanya Posta TV
+https://api-tv3.yayin.com.tr/postatv/postatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Altas TV" group-title="M3U8 PLAYER / TÜRKİYE",Altas TV
+https://edge1.socialsmart.tv/altastv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-name="Anadolu Net TV" group-title="M3U8 PLAYER / TÜRKİYE",Anadolu Net TV
+https://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8
+#EXTINF:-1 tvg-name="Bursa AS TV" group-title="M3U8 PLAYER / TÜRKİYE",Bursa AS TV
+https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8
+#EXTINF:-1 tvg-name="Çay TV" group-title="M3U8 PLAYER / TÜRKİYE",Çay TV
+https://edge1.socialsmart.tv/caytv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-name="Deniz Postası TV" group-title="M3U8 PLAYER / TÜRKİYE",Deniz Postası TV
+https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist.m3u8
