@@ -1,0 +1,32 @@
+#EXTM3U
+# M3U8 PLAYER - sayfada listelenen açık kategori M3U kaynakları. Dış listedeki tüm akışlar TV'de tek tek test edilmiş değildir.
+
+#EXTINF:0 type="playlist" group-title="01 - SPOR / ANİMASYON",SPOR - iptv-org açık spor kategori listesi
+https://iptv-org.github.io/iptv/categories/sports.m3u
+
+#EXTINF:0 type="playlist" group-title="01 - SPOR / ANİMASYON",ANİMASYON - iptv-org açık animasyon kategori listesi
+https://iptv-org.github.io/iptv/categories/animation.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - HABER / EĞLENCE",HABER
+https://iptv-org.github.io/iptv/categories/news.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - HABER / EĞLENCE",EĞLENCE
+https://iptv-org.github.io/iptv/categories/entertainment.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - BELGESEL / EĞİTİM",BELGESEL
+https://iptv-org.github.io/iptv/categories/documentary.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - BELGESEL / EĞİTİM",EĞİTİM
+https://iptv-org.github.io/iptv/categories/education.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - BELGESEL / EĞİTİM",BİLİM
+https://iptv-org.github.io/iptv/categories/science.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - BELGESEL / EĞİTİM",KÜLTÜR
+https://iptv-org.github.io/iptv/categories/culture.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - MÜZİK / ÇOCUK",MÜZİK
+https://iptv-org.github.io/iptv/categories/music.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - MÜZİK / ÇOCUK",ÇOCUK
+https://iptv-org.github.io/iptv/categories/kids.m3u
