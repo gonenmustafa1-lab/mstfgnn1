@@ -1,0 +1,16 @@
+#EXTM3U
+# TV1 - Elle seçilmiş ücretsiz Türk spor yayınları; daily sync adds verified official free sports channels
+#EXTINF:-1 tvg-name="TRT Spor Yıldız" group-title="SPOR / TÜRKİYE",TRT Spor Yıldız
+https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
+#EXTINF:-1 tvg-name="A Spor" group-title="SPOR / TÜRKİYE",A Spor
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+#EXTINF:-1 tvg-name="HT Spor" group-title="SPOR / TÜRKİYE",HT Spor
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
+#EXTINF:-1 tvg-name="TJK TV" group-title="SPOR / TÜRKİYE",TJK TV
+https://tjktv-live.tjk.org/tjktv.m3u8
+#EXTINF:-1 tvg-name="BJK TV" group-title="SPOR / TÜRKİYE",BJK TV
+https://bjk-live.ercdn.net/bjktv/bjktv.m3u8
+#EXTINF:-1 tvg-name="Sports TV" group-title="SPOR / TÜRKİYE",Sports TV
+https://live.sportstv.com.tr/hls/low/sportstv_hd/index.m3u8
+#EXTINF:-1 tvg-name="Ekol Sports" group-title="SPOR / TÜRKİYE",Ekol Sports
+https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8
