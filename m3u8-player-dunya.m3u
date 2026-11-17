@@ -4,5 +4,5 @@
 #EXTINF:0 type="playlist" group-title="01 - DAHA SIKI FİLTRELİ",FREE-TV GLOBAL - ücretsiz yayın seçkisi (2.200+ kayıt)
 https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
 
-#EXTINF:0 type="playlist" group-title="02 - GENİŞ TOPLULUK KATALOĞU",IPTV-ORG DÜNYA - tüm ülkeler ve kategoriler (çok büyük liste)
-https://iptv-org.github.io/iptv/index.m3u
+#EXTINF:0 type="playlist" group-title="02 - GENİŞ TOPLULUK KATALOĞU",IPTV-ORG DÜNYA - tüm kanallar kategoriye göre (çok büyük liste)
+https://iptv-org.github.io/iptv/index.category.m3u
