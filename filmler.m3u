@@ -1,7 +1,8 @@
 #EXTM3U
 # TV1 - Genişletilmiş ücretsiz film arşivi.
-# Kaynaklar: Nexonic free VOD (Internet Archive açık lisans/kamu malı metadata), Archive Watch ve PublicDomainM3U.
-# Not: Kataloglar dış kaynakta güncellenir. Bazı başlıklar ülkeye göre telif farklılığı taşıyabilir; kaynak lisansı kontrol edilmelidir.
+# Kaynaklar: Nexonic VOD, Archive Watch ve PublicDomainM3U.
+# Nexonic kayıtlarında x-licence alanı bulunur: Public Domain yanında CC-BY/CC0 ve bazı NC/ND lisansları da vardır; tüm kayıtlar kamu malı değildir.
+# Kataloglar kaynaklarında değişir; kategori listeleri birbiriyle örtüşebilir ve bazı türlerde dizi bölümleri de bulunabilir.
 
 # --- 01 KLASİK VE TÜRLERE GÖRE FİLMLER ---
 #EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",KOMEDİ
