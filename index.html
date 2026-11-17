@@ -1,37 +1,25 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#08111f">
-  <title>Mustafa TV</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08111f">
+<meta name="description" content="Türkiye'de Türksat üzerinden izlenebilen ulusal, haber, spor, çocuk ve belgesel kanallarının frekans rehberi.">
+<title>Mustafa TV | Türksat Kanal Rehberi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top">
-    <div class="brand"><span class="brand-mark">▶</span><div><b>MUSTAFA TV</b><small>Kolay TV keyfi</small></div></div>
-    <span class="live"><i></i> CANLI YAYIN</span>
-  </header>
-  <main>
-    <section class="player-wrap">
-      <div class="player-head"><div><span class="eyebrow">ŞİMDİ İZLİYORSUN</span><h1 id="currentTitle">Bir kanal seçin</h1></div><button id="fullBtn" class="full-btn" type="button">⛶ Tam ekran</button></div>
-      <div class="video-box" id="videoBox">
-        <video id="video" controls playsinline autoplay></video>
-        <div id="placeholder" class="placeholder"><div class="play-big">▶</div><b>İzlemek için aşağıdan bir kanal seçin</b><small>Yayın açılmazsa başka bir kanal deneyin.</small></div>
-      </div>
-      <p id="status" class="status" aria-live="polite">Kanal seçilmeyi bekliyor.</p>
-    </section>
-    <section class="channels">
-      <div class="section-title"><div><span class="eyebrow">KANALLAR</span><h2>Televizyon</h2></div><input id="search" type="search" placeholder="Kanal ara…" aria-label="Kanal ara"></div>
-      <nav id="filters" class="filters" aria-label="Kanal kategorileri">
-        <button class="filter active" data-filter="Tümü">Tümü</button><button class="filter" data-filter="Ulusal">Ulusal</button><button class="filter" data-filter="Haber">Haber</button><button class="filter" data-filter="TRT">TRT</button>
-      </nav>
-      <div id="channelGrid" class="channel-grid"></div>
-      <p class="fineprint">Yayın adresleri üçüncü taraf kaynaklardan gelebilir; bazı yayınlar zamanla kapanabilir veya tarayıcıda oynatmaya izin vermeyebilir. Resmî yayın sayfaları en güvenilir alternatiftir.</p>
-    </section>
-  </main>
-  <footer>Mustafa TV · Ücretsiz kanal arayüzü</footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#"><span class="brand-icon">M</span><span><b>MUSTAFA TV</b><small>UYDU & YAYIN REHBERİ</small></span></a><div class="top-right"><span class="satellite-pill"><i></i> TÜRKSAT 42° DOĞU</span></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="kicker">TÜRKİYE'NİN TELEVİZYON REHBERİ</span><h1>Sevdiğin kanal,<br><em>tek aramayla.</em></h1><p>Ulusal kanallar, haber, spor, çocuk ve belgesel yayınları. Türksat frekanslarını kolayca bul, tek dokunuşla kopyala.</p><div class="hero-actions"><a class="primary-btn" href="#channels">Kanalları keşfet <span>↓</span></a><a class="text-btn" href="https://www.turksat.com.tr/uydu/yayincilik-hizmetleri/turksat-frekans-listesi" target="_blank" rel="noopener">Resmî frekans listesi ↗</a></div></div><div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="dish"><div class="dish-inner">42°<small>DOĞU</small></div><div class="dish-arm"></div><div class="dish-base"></div></div><div class="signal s1">●</div><div class="signal s2">●</div><div class="signal s3">●</div><div class="art-caption">TÜRKSAT<br><b>4A · 5B · 6A</b></div></div></section>
+<section class="stats"><div><strong id="totalCount">—</strong><span>kanal kaydı</span></div><div><strong>HD</strong><span>yüksek çözünürlük</span></div><div><strong>42°E</strong><span>uydu konumu</span></div><div><strong>ÜCRETSİZ</strong><span>şifresiz yayın seçkisi</span></div></section>
+<section class="section" id="channels"><div class="section-head"><div><span class="kicker">KANAL KATALOĞU</span><h2>Uydu kanalları</h2><p>Türkiye kapsama alanındaki popüler şifresiz kanallar.</p></div><div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Kanal veya frekans ara..." aria-label="Kanal veya frekans ara"></div></div>
+<div class="filters" id="filters"><button class="filter active" data-filter="Tümü">Tümü</button><button class="filter" data-filter="Ulusal">Ulusal</button><button class="filter" data-filter="Haber">Haber</button><button class="filter" data-filter="Spor">Spor</button><button class="filter" data-filter="Belgesel">Belgesel</button><button class="filter" data-filter="Çocuk">Çocuk</button><button class="filter" data-filter="Eğlence">Eğlence</button><button class="filter" data-filter="Diğer">Diğer</button></div>
+<div class="results-line"><span id="resultCount">Kanallar yükleniyor…</span><span>Frekans bilgisi · MHz</span></div><div class="channel-grid" id="channelGrid"></div><div class="empty hidden" id="empty">Aradığın kanal bulunamadı. Başka bir isim veya frekans dene.</div></section>
+<section class="iptv-panel"><div class="iptv-icon">▶</div><div class="iptv-copy"><span class="kicker">İNTERNET ÜZERİNDEN İZLEME</span><h2>SS IPTV listen hazır</h2><p>Uydu frekansları televizyonun uydu alıcısında kullanılır. SS IPTV için ayrı internet yayın listesi gerekir.</p><a class="primary-btn small" href="https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/tr.m3u" target="_blank" rel="noopener">M3U listesini aç ↗</a></div></section>
+<section class="notice"><span>ⓘ</span><p><b>Önemli:</b> Frekanslar yayıncılar tarafından değiştirilebilir. Kanalın Türkiye kapsamasında ve şifresiz olduğuna ilişkin bilgiler kaynak listelerden derlenmiştir; kanal bulunamazsa TKGS veya şebeke araması yapın. Uydu frekans listesi canlı internet yayını değildir.</p></section>
+</main>
+<footer><span class="footer-brand">MUSTAFA TV</span><span>Bağımsız kanal rehberi · Resmî Türksat verileri esas alınır</span><a href="https://www.turksat.com.tr/uydu/yayincilik-hizmetleri/turksat-frekans-listesi" target="_blank" rel="noopener">Veri kaynağı ↗</a></footer>
+<script src="script.js"></script>
+</body></html>
