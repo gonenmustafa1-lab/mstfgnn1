@@ -1,5 +1,18 @@
 #EXTM3U
 # Türkiye - SS IPTV / Ücretsiz yayın bağlantıları
+
+# --- TRT MAÇLARI ---
+# Not: Tabii'deki özel maç yayınları için herkese açık, SS IPTV uyumlu doğrudan M3U adresi bulunmadığından sahte bağlantı eklenmemiştir.
+# TRT 1'de şifresiz yayınlanan maçlar
+#EXTINF:-1 tvg-name="TRT 1 - Maç Yayını" group-title="00 - TRT MAÇLARI",TRT 1 - Maç Yayını
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+# TRT Spor canlı yayınları
+#EXTINF:-1 tvg-name="TRT Spor - Canlı" group-title="00 - TRT MAÇLARI",TRT Spor - Canlı
+https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
+# TRT Spor Yıldız canlı yayınları
+#EXTINF:-1 tvg-name="TRT Spor Yıldız - Canlı" group-title="00 - TRT MAÇLARI",TRT Spor Yıldız - Canlı
+https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
+
 # Not: Yayıncı CDN adresleri zamanla değişebilir; bazı kanallar coğrafi/uygulama kısıtlaması uygulayabilir.
 
 #EXTINF:-1 tvg-name="TRT 1" group-title="01 - Ulusal",TRT 1
