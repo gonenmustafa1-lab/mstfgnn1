@@ -25,3 +25,6 @@ https://broadcastatlas.com/official.m3u
 
 #EXTINF:0 type="playlist" group-title="08 - ARŞİV",ARCHIVE WATCH - Klasik film ve TV arşivi
 https://archivewatch.org/feeds/archivewatch.m3u
+
+#EXTINF:0 type="playlist" group-title="09 - M3U8 PLAYER",M3U8 PLAYER - Ek Türkiye yayınları / spor / animasyon / dünya listeleri
+https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/m3u8-player.m3u
