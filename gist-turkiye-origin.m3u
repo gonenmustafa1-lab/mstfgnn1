@@ -1,0 +1,51 @@
+#EXTM3U
+# Source: zek/209bcd5888473014d4cc5d82390e7d56
+# Turkiye origin IPTV — iptv-org/iptv tr.m3u filtered.
+# Gistteki mevcut TV1 kanalları tekrar eklenmedi. [Geo-blocked] işaretli premium/erişim kısıtlı akışlar dışarıda bırakıldı.
+# Bu alt listede yalnızca Gistteki benzersiz ek akışlar bulunur.
+
+# --- EK ULUSAL / YEREL ---
+#EXTINF:-1 tvg-id="BizimevTV.tr@SD" group-title="GIST / YEREL",Bizimev TV (720p)
+https://mn-nl.mncdn.com/blutv_bizimev/bizimev_sd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="FlashTV.tr@SD" group-title="GIST / YEREL",Flash TV (720p)
+https://mn-nl.mncdn.com/blutv_flashtv/live.m3u8
+#EXTINF:-1 tvg-id="TV4.tr@SD" group-title="GIST / YEREL",TV4 (720p)
+https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
+#EXTINF:-1 tvg-id="UlkeTV.tr@SD" group-title="GIST / YEREL",Ülke TV (720p)
+https://mn-nl.mncdn.com/blutv_ulketv2/live.m3u8
+#EXTINF:-1 tvg-id="TBMMTV.tr@SD" group-title="GIST / KAMU",TBMM TV (720p)
+https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
+
+# --- HABER / EKONOMİ ---
+#EXTINF:-1 tvg-id="CNBCe.tr@SD" group-title="GIST / HABER",CNBC-e
+https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
+#EXTINF:-1 tvg-id="MekameleenTV.tr@SD" group-title="GIST / HABER",Mekameleen TV (1080p)
+https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ElsharqTV.tr@SD" group-title="GIST / HABER",Elsharq TV (1080p) - 7/24 olmayabilir
+https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8
+
+# --- BELGESEL ---
+#EXTINF:-1 tvg-id="CGTNDocumentary.tr@SD" group-title="GIST / BELGESEL",CGTN Documentary
+https://mn-nl.mncdn.com/dogusdyg_drone/cgtn/playlist.m3u8
+
+# --- MÜZİK ---
+#EXTINF:-1 tvg-id="KralPopTV.tr@SD" group-title="GIST / MÜZİK",KRAL Pop TV (720p)
+https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
+#EXTINF:-1 tvg-id="Number1Turk.tr@SD" group-title="GIST / MÜZİK",Number 1 Türk (720p)
+https://mn-nl.mncdn.com/blutv_nr1turk2/live.m3u8
+
+# --- TRT / EĞİTİM ---
+#EXTINF:-1 tvg-id="TRTAvaz.tr@SD" group-title="GIST / TRT",TRT Avaz (720p)
+https://tv-trtavaz.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTKurdi.tr@SD" group-title="GIST / TRT",TRT Kurdî (720p)
+https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTTurk.tr@SD" group-title="GIST / TRT",TRT Türk (720p)
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTDiyanetCocuk.tr@SD" group-title="GIST / ÇOCUK",TRT Diyanet Çocuk (720p)
+https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTEBAIlkokul.tr@SD" group-title="GIST / EĞİTİM",TRT EBA İlkokul
+https://tv-e-okul00.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTEBA.tr@SD" group-title="GIST / EĞİTİM",TRT EBA Ortaokul
+https://tv-e-okul01.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTEBALise.tr@SD" group-title="GIST / EĞİTİM",TRT EBA Lise
+https://tv-e-okul02.medya.trt.com.tr/master.m3u8
