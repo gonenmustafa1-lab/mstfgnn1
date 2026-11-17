@@ -1,0 +1,31 @@
+name: TV1 playlist auto update
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update Turkish channel list
+        run: python3 scripts/update_tv1.py
+
+      - name: Commit changes if playlist changed
+        run: |
+          if git diff --quiet -- tv1.m3u; then
+            echo "No playlist changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tv1.m3u
+          git commit -m "Otomatik TV1 kanal listesi güncellemesi"
+          git push
