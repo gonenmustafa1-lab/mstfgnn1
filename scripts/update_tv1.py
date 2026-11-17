@@ -10,7 +10,7 @@ from urllib.error import URLError, HTTPError
 from pathlib import Path
 
 SOURCE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u"
-OUTPUT = Path("tv1.m3u")
+OUTPUT = Path("tv-kanallari.m3u")
 
 # tvg-id (without the country suffix) -> (display name, SS IPTV category)
 CHANNELS = {
@@ -99,7 +99,7 @@ def main():
             continue
         found[channel_id] = (info, url)
 
-    output = ["#EXTM3U", "# TV1 - otomatik güncellenen Türkiye kanal listesi",
+    output = ["#EXTM3U", "# TV1 - otomatik güncellenen TV KANALLARI alt listesi",
               "# Kaynak: iptv-org/iptv (topluluk tarafından derlenen herkese açık yayın bağlantıları)",
               "# Yayınların çalışması yayıncı, bölge ve internet sağlayıcısına bağlıdır.", ""]
     count = 0
