@@ -1,28 +1,61 @@
 #EXTM3U
-# TV1 - Resmî yayıncıların YouTube'da yayımladığı dizi oynatma listeleri.
-# NOT: Bunlar YouTube sayfa/playlist adresleridir; SS IPTV resmî belgelerinde YouTube çözümlemesi garanti edilmez.
-# SS IPTV bunları doğrudan açamazsa YouTube uygulaması veya uyumlu oynatıcı gerekir.
+# TV1 - Resmî kanalların YouTube'da yayımladığı Türk dizileri.
+# İlk bölüm grubu YouTube oynatma listelerine gider. SS IPTV'nin YouTube URL çözümlemesi garanti değildir.
+# İkinci grup resmî bölüm katalog sayfalarıdır; web sayfası açabilir.
 
-# --- DRAM ---
-#EXTINF:-1 tvg-name="Gönül Dağı - Resmî Bölümler" group-title="YOUTUBE / DRAM",Gönül Dağı - 233 video listesi
+# --- YOUTUBE OYNATMA LİSTELERİ ---
+#EXTINF:-1 tvg-name="Gönül Dağı" group-title="01 - YOUTUBE LİSTELERİ",Gönül Dağı - 233 video
 https://www.youtube.com/playlist?list=PLskt8bvhVjrUbynLtGtzHAvpArB7sWFVv
-#EXTINF:-1 tvg-name="Ezel - Resmî Bölümler" group-title="YOUTUBE / DRAM",Ezel - 71 video listesi
+#EXTINF:-1 tvg-name="Ezel" group-title="01 - YOUTUBE LİSTELERİ",Ezel - 71 video
 https://www.youtube.com/playlist?list=PLsvJ8lYSMnLufc5q0mYY_JsQS7-oplO0r
-#EXTINF:-1 tvg-name="Çukur - Resmî Bölümler" group-title="YOUTUBE / DRAM",Çukur - 131 video listesi
+#EXTINF:-1 tvg-name="Çukur" group-title="01 - YOUTUBE LİSTELERİ",Çukur - 131 video
 https://www.youtube.com/playlist?list=PL_8aRB2NmwZ6dWErHPBcpjml7AS6LATWA
-#EXTINF:-1 tvg-name="Kardeşlerim - Resmî Bölümler" group-title="YOUTUBE / DRAM",Kardeşlerim - 133 video listesi
+#EXTINF:-1 tvg-name="Kardeşlerim" group-title="01 - YOUTUBE LİSTELERİ",Kardeşlerim - 133 video
 https://www.youtube.com/playlist?list=PLTLp6QTqSRy8ZpihQ0c4U9CJmTLxYBPG2
-#EXTINF:-1 tvg-name="Masumlar Apartmanı - Resmî Bölümler" group-title="YOUTUBE / DRAM",Masumlar Apartmanı - 71 video listesi
+#EXTINF:-1 tvg-name="Masumlar Apartmanı" group-title="01 - YOUTUBE LİSTELERİ",Masumlar Apartmanı - 71 video
 https://www.youtube.com/playlist?list=PLnxHdTRv2OBc4ep-93_w2Q8svvmxrl7_T
-#EXTINF:-1 tvg-name="Bir Zamanlar Çukurova - Resmî Bölümler" group-title="YOUTUBE / DRAM",Bir Zamanlar Çukurova - 34 video listesi
+#EXTINF:-1 tvg-name="Bir Zamanlar Çukurova" group-title="01 - YOUTUBE LİSTELERİ",Bir Zamanlar Çukurova - 34 video
 https://www.youtube.com/playlist?list=PLuHVBmVfl-DBLxwaElqg6AvZ2_hyfjA_C
-#EXTINF:-1 tvg-name="Kızılcık Şerbeti - Resmî Bölümler" group-title="YOUTUBE / DRAM",Kızılcık Şerbeti - 146 video listesi
+#EXTINF:-1 tvg-name="Kızılcık Şerbeti" group-title="01 - YOUTUBE LİSTELERİ",Kızılcık Şerbeti - 146 video
 https://www.youtube.com/playlist?list=PLusr3qjmF4tA8NqLIba4SEhtyWkL9G6uz
-#EXTINF:-1 tvg-name="Kara Sevda - Resmî Bölümler" group-title="YOUTUBE / DRAM",Kara Sevda - 75 video listesi
+#EXTINF:-1 tvg-name="Kara Sevda" group-title="01 - YOUTUBE LİSTELERİ",Kara Sevda - 75 video
 https://www.youtube.com/playlist?list=PLwjf4vKFw7V0L0FKF4JDy8KMEHDC9Uyzb
-#EXTINF:-1 tvg-name="Kuzey Güney - Resmî Bölümler" group-title="YOUTUBE / DRAM",Kuzey Güney - 80 video listesi
+#EXTINF:-1 tvg-name="Kuzey Güney" group-title="01 - YOUTUBE LİSTELERİ",Kuzey Güney - 80 video
 https://www.youtube.com/playlist?list=PLfQotdmGfCty3w2e8CHPspq1FWNQcrHMa
 
-# --- RESMÎ TÜRK DİZİ KATALOĞU ---
-#EXTINF:-1 tvg-name="24 Resmî Türk Dizisi Kataloğu" group-title="YOUTUBE / KATALOG",24 Türk dizisinin resmî bölüm listeleri
+# --- RESMÎ DİZİ BÖLÜM SAYFALARI ---
+# Bu dizi sayfaları resmî yayıncı/kanal YouTube oynatma listelerini sunar, fakat TV tarayıcısında açılabilir.
+#EXTINF:-1 tvg-name="Sıla" group-title="02 - RESMÎ DİZİ SAYFALARI",Sıla - 79 video
+https://hazirbak.com/dizi-izle/sila
+#EXTINF:-1 tvg-name="Kuruluş Osman" group-title="02 - RESMÎ DİZİ SAYFALARI",Kuruluş Osman - 194 video
+https://hazirbak.com/dizi-izle/kurulus-osman
+#EXTINF:-1 tvg-name="Uyanış Büyük Selçuklu" group-title="02 - RESMÎ DİZİ SAYFALARI",Uyanış: Büyük Selçuklu - 34 video
+https://hazirbak.com/dizi-izle/uyanis-buyuk-selcuklu
+#EXTINF:-1 tvg-name="Payitaht Abdülhamid" group-title="02 - RESMÎ DİZİ SAYFALARI",Payitaht Abdülhamid - 154 video
+https://hazirbak.com/dizi-izle/payitaht-abdulhamid
+#EXTINF:-1 tvg-name="Muhteşem Yüzyıl Kösem" group-title="02 - RESMÎ DİZİ SAYFALARI",Muhteşem Yüzyıl: Kösem - 60 video
+https://hazirbak.com/dizi-izle/muhtesem-yuzyil-kosem
+#EXTINF:-1 tvg-name="Bir Zamanlar Kıbrıs" group-title="02 - RESMÎ DİZİ SAYFALARI",Bir Zamanlar Kıbrıs - 9 video
+https://hazirbak.com/dizi-izle/bir-zamanlar-kibris
+#EXTINF:-1 tvg-name="Barbaroslar" group-title="02 - RESMÎ DİZİ SAYFALARI",Barbaroslar: Akdeniz'in Kılıcı - 32 video
+https://hazirbak.com/dizi-izle/barbaroslar
+#EXTINF:-1 tvg-name="Mehmetçik Kutulamare" group-title="02 - RESMÎ DİZİ SAYFALARI",Mehmetçik Kûtulamâre - 33 video
+https://hazirbak.com/dizi-izle/mehmetcik-kutulamare
+#EXTINF:-1 tvg-name="Seksenler" group-title="02 - RESMÎ DİZİ SAYFALARI",Seksenler - 228 video
+https://hazirbak.com/dizi-izle/seksenler
+#EXTINF:-1 tvg-name="Bizimkiler" group-title="02 - RESMÎ DİZİ SAYFALARI",Bizimkiler - 223 video
+https://hazirbak.com/dizi-izle/bizimkiler
+#EXTINF:-1 tvg-name="Yeşil Deniz" group-title="02 - RESMÎ DİZİ SAYFALARI",Yeşil Deniz - 75 video
+https://hazirbak.com/dizi-izle/yesil-deniz
+#EXTINF:-1 tvg-name="Kalk Gidelim" group-title="02 - RESMÎ DİZİ SAYFALARI",Kalk Gidelim - 135 video
+https://hazirbak.com/dizi-izle/kalk-gidelim
+#EXTINF:-1 tvg-name="Behzat Ç" group-title="02 - RESMÎ DİZİ SAYFALARI",Behzat Ç. - 96 video
+https://hazirbak.com/dizi-izle/behzat-c
+#EXTINF:-1 tvg-name="Arka Sokaklar" group-title="02 - RESMÎ DİZİ SAYFALARI",Arka Sokaklar - 717 video
+https://hazirbak.com/dizi-izle/arka-sokaklar
+#EXTINF:-1 tvg-name="Teşkilat" group-title="02 - RESMÎ DİZİ SAYFALARI",Teşkilat - 191 video
+https://hazirbak.com/dizi-izle/teskilat
+
+# --- TAM KATALOG ---
+#EXTINF:-1 tvg-name="24 Resmî Türk Dizisi Kataloğu" group-title="03 - TÜM DİZİLER",24 Türk dizisinin bölüm sayfaları
 https://hazirbak.com/dizi-izle
