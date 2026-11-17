@@ -1,0 +1,47 @@
+#EXTM3U
+# M3U8 PLAYER - site üzerindeki ülke bazlı public playlist kaynakları. Dil, bölge ve yayın uygunluğu değişebilir.
+
+#EXTINF:0 type="playlist" group-title="01 - ÖNCELİKLİ",TÜRKİYE
+https://iptv-org.github.io/iptv/countries/tr.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - AVRUPA",İNGİLTERE
+https://iptv-org.github.io/iptv/countries/uk.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - AVRUPA",FRANSA
+https://iptv-org.github.io/iptv/countries/fr.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - AVRUPA",ALMANYA
+https://iptv-org.github.io/iptv/countries/de.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - AVRUPA",İSPANYA
+https://iptv-org.github.io/iptv/countries/es.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - AVRUPA",RUSYA
+https://iptv-org.github.io/iptv/countries/ru.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - AMERİKA",ABD
+https://iptv-org.github.io/iptv/countries/us.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - AMERİKA",KANADA
+https://iptv-org.github.io/iptv/countries/ca.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - AMERİKA",BREZİLYA
+https://iptv-org.github.io/iptv/countries/br.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - ASYA / PASİFİK",JAPONYA
+https://iptv-org.github.io/iptv/countries/jp.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - ASYA / PASİFİK",AVUSTRALYA
+https://iptv-org.github.io/iptv/countries/au.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - ASYA / PASİFİK",ENDONEZYA
+https://iptv-org.github.io/iptv/countries/id.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - ASYA / PASİFİK",ÇİN
+https://iptv-org.github.io/iptv/countries/cn.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - ASYA / PASİFİK",TAYVAN
+https://iptv-org.github.io/iptv/countries/tw.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - ASYA / PASİFİK",GÜNEY KORE
+https://iptv-org.github.io/iptv/countries/kr.m3u
