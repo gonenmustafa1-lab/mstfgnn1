@@ -1,0 +1,10 @@
+#EXTM3U
+# TV1 - TRT'nin herkese açık doğrudan canlı yayınları; Tabii özel/DRM maç akışı değildir
+#EXTINF:-1 tvg-name="TRT 1" group-title="TRT CANLI",TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-name="TRT Spor" group-title="TRT CANLI",TRT Spor
+https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
+#EXTINF:-1 tvg-name="TRT Spor Yıldız" group-title="TRT CANLI",TRT Spor Yıldız
+https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
+#EXTINF:-1 tvg-name="TRT Haber" group-title="TRT CANLI",TRT Haber
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
