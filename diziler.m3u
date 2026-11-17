@@ -1,5 +1,18 @@
 #EXTM3U
-# TV1 - Açık lisans/kamu malı bilgisi kayıtlı klasik TV ve dizi bölümleri.
+# TV1 - Tek ana TV1 adresinin içindeki diziler menüsü.
+# Doğrudan video kaynakları, kamu malı arşivler ve resmî YouTube listeleri ayrı bölümlerdedir.
 
-#EXTINF:0 type="playlist" group-title="01 - KLASİK DİZİLER",NEXONIC - 839+ dizi bölümü, doğrudan MP4
+#EXTINF:0 type="playlist" group-title="01 - KLASİK DİZİLER",NEXONIC - Klasik dizi arşivi (839+ bölüm)
 https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/series.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - KAMU MALI DİZİLER",PUBLIC DOMAIN M3U - açık dizi arşivi
+https://raw.githubusercontent.com/OnlineM3U/publicdomainm3u/main/series.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - AÇIK ARŞİV",ARCHIVE WATCH - film ve klasik TV arşivi
+https://archivewatch.org/feeds/archivewatch.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - YOUTUBE DİZİLERİ",RESMÎ YOUTUBE DİZİLERİ - 9 oynatma listesi + katalog
+https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/youtube-diziler.m3u
+
+#EXTINF:0 type="playlist" group-title="05 - AÇIK LİSANS",LEGAL FREE IPTV - açık lisanslı / kamu malı dizi ve bölümler
+https://biskyt.github.io/legalFreeIPTVplaylist/series.m3u
