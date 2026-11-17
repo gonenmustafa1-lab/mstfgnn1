@@ -52,3 +52,6 @@ https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/g
 https://archivewatch.org/feeds/archivewatch.m3u
 #EXTINF:0 type="playlist" group-title="05 - EK ARŞİVLER",PUBLIC DOMAIN M3U - AÇIK KLASİK FİLMLER
 https://raw.githubusercontent.com/OnlineM3U/publicdomainm3u/main/movies.m3u
+
+#EXTINF:0 type="playlist" group-title="05 - EK ARŞİVLER",LEGAL FREE IPTV - AÇIK LİSANSLI / KAMU MALI FİLMLER
+https://biskyt.github.io/legalFreeIPTVplaylist/movies.m3u
