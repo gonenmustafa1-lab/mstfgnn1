@@ -1,6 +1,6 @@
 #EXTM3U
 # TV1 - Tek ana TV1 adresinin içindeki diziler menüsü.
-# Doğrudan video kaynakları, kamu malı arşivler ve resmî YouTube listeleri ayrı bölümlerdedir.
+# Her arşivdeki lisans ve erişim koşulları değişebilir. YouTube bölüm bağlantıları oynatma listesi/web sayfasıdır; doğrudan M3U video akışı değildir.
 
 #EXTINF:0 type="playlist" group-title="01 - KLASİK DİZİLER",NEXONIC - Klasik dizi arşivi (839+ bölüm)
 https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/series.m3u
