@@ -1,0 +1,8 @@
+#EXTM3U
+# M3U8 PLAYER - global public playlist kaynakları. Büyük listeler yavaş yüklenebilir; tüm satırlar aynı anda doğrulanmış değildir.
+
+#EXTINF:0 type="playlist" group-title="01 - DAHA SIKI FİLTRELİ",FREE-TV GLOBAL - ücretsiz yayın seçkisi (2.200+ kayıt)
+https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+
+#EXTINF:0 type="playlist" group-title="02 - GENİŞ TOPLULUK KATALOĞU",IPTV-ORG DÜNYA - tüm ülkeler ve kategoriler (çok büyük liste)
+https://iptv-org.github.io/iptv/index.m3u
