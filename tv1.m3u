@@ -8,7 +8,7 @@ https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/tv-kanallari.m
 #EXTINF:0 type="playlist" group-title="02 - SPOR",IPTV SPOR - Ücretsiz canlı spor kanalları
 https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/spor.m3u
 
-#EXTINF:0 type="playlist" group-title="03 - TRT / TABII",TRT / TABII - Ücretsiz canlı TRT yayınları
+#EXTINF:0 type="playlist" group-title="03 - TRT / TABII",TABII / TRT - ücretsiz TRT yayınları (Tabii özel maçları değil)
 https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/tabii-trt.m3u
 
 #EXTINF:0 type="playlist" group-title="04 - FİLMLER",FİLMLER - Türlere ayrılmış ücretsiz VOD arşivi
@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/diziler.m3u
 #EXTINF:0 type="playlist" group-title="06 - EK TÜRK KANALLARI",TÜRKİYE EK KANALLAR - Ek ücretsiz yayınlar
 https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/tv-ekstra.m3u
 
-#EXTINF:0 type="playlist" group-title="07 - DÜNYA",DÜNYA TV - 475 resmi ücretsiz kanal
+#EXTINF:0 type="playlist" group-title="07 - DÜNYA",DÜNYA TV - 2.200+ ücretsiz global yayın ve kategori arşivi
 https://broadcastatlas.com/official.m3u
 
 #EXTINF:0 type="playlist" group-title="08 - ARŞİV",ARCHIVE WATCH - Klasik film ve TV arşivi
