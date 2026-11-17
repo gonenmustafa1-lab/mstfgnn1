@@ -15,17 +15,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update Turkish channel list
+      - name: Update Turkish channel sub-playlist
         run: python3 scripts/update_tv1.py
 
       - name: Commit changes if playlist changed
         run: |
-          if git diff --quiet -- tv1.m3u; then
+          if git diff --quiet -- tv-kanallari.m3u; then
             echo "No playlist changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tv1.m3u
-          git commit -m "Otomatik TV1 kanal listesi güncellemesi"
+          git add tv-kanallari.m3u
+          git commit -m "Otomatik TV kanalları alt listesi güncellemesi"
           git push
