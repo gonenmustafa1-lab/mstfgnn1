@@ -1,0 +1,14 @@
+#EXTM3U
+# M3U8 PLAYER kaynaklarını TV1 içinde tek bir menüden aç.
+
+#EXTINF:0 type="playlist" group-title="01 - TÜRKİYE",TÜRKİYE - Ek doğrudan public yayınlar
+https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/m3u8-player-turkiye-ekstra.m3u
+
+#EXTINF:0 type="playlist" group-title="02 - KATEGORİLER",SPOR / ANİMASYON / HABER / EĞİTİM vb.
+https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/m3u8-player-kategoriler.m3u
+
+#EXTINF:0 type="playlist" group-title="03 - ÜLKELER",15 ÜLKE LİSTESİ
+https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/m3u8-player-ulkeler.m3u
+
+#EXTINF:0 type="playlist" group-title="04 - DÜNYA",GLOBAL ÜCRETSİZ TV LİSTELERİ
+https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/m3u8-player-dunya.m3u
