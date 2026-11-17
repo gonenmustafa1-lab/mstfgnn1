@@ -117,3 +117,12 @@ https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 #EXTINF:-1 tvg-name="PowerTürk TV" group-title="03 - TV KANALLARI / Müzik",PowerTürk TV
 https://live.artidijitalmedya.com/artidijital_powerturktv/powerturktv/playlist.m3u8
+
+# --- IPTV / ÜCRETSİZ SPOR KANALLARI ---
+# Kaynaklar: herkese açık/ücretsiz spor yayınları; ücretli maç paketleri değildir.
+#EXTINF:-1 tvg-name="beIN Sports Haber" group-title="01 - IPTV / Spor",beIN Sports Haber
+https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Bein_Spor_Haber.m3u8
+#EXTINF:-1 tvg-name="Sports TV" group-title="01 - IPTV / Spor",Sports TV
+https://live.sportstv.com.tr/hls/low/sportstv_hd/index.m3u8
+#EXTINF:-1 tvg-name="Ekol Sports" group-title="01 - IPTV / Spor",Ekol Sports
+https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8
