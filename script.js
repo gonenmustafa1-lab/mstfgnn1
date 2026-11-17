@@ -1,60 +1,47 @@
-const PLAYLIST_URL = "https://raw.githubusercontent.com/gonenmustafa1-lab/mstfgnn1/main/tr.m3u";
-const channelsWanted = [
-  ["ATV","Ulusal"],["Kanal D","Ulusal"],["Show TV","Ulusal"],["Star TV","Ulusal"],
-  ["NOW TV","Ulusal"],["TRT 1","TRT"],["TRT 2","TRT"],["TRT Belgesel","TRT"],
-  ["TV8","Ulusal"],["Beyaz TV","Ulusal"],["Habertürk","Haber"],["CNN Türk","Haber"],
-  ["NTV","Haber"],["A Haber","Haber"],["24 TV","Haber"],["TGRT Haber","Haber"]
-];
-const video=document.getElementById("video"), grid=document.getElementById("channelGrid"), statusEl=document.getElementById("status");
-let hls=null, activeFilter="Tümü", allChannels=[];
-const norm=s=>(s||"").toLocaleLowerCase("tr-TR").replace(/ı/g,"i").replace(/İ/g,"i").replace(/[^a-z0-9]/g,"");
-function parseM3U(txt){
-  const lines=txt.split(/\r?\n/);let meta="",out=[];
-  for(const line of lines){if(line.startsWith("#EXTINF"))meta=line;else if(line.trim()&&!line.startsWith("#")&&meta){const name=(meta.split(",").pop()||"").trim();out.push({name,url:line.trim()});meta="";}}
-  return out;
-}
-function findMatch(name, entries){
-  const n=norm(name);
-  return entries.find(e=>{const x=norm(e.name);return x===n||x.includes(n)||n.includes(x);});
-}
-function render(){
-  const q=norm(document.getElementById("search").value);
-  grid.innerHTML="";
-  const list=allChannels.filter(c=>(activeFilter==="Tümü"||c.category===activeFilter)&&(!q||norm(c.name).includes(q)));
-  if(!list.length){grid.innerHTML='<p class="status">Bu kategoride eşleşen kanal bulunamadı.</p>';return;}
-  list.forEach(c=>{
-    const b=document.createElement("button");b.className="channel"+(c===selected?" selected":"");b.type="button";
-    const initials=c.name.replace(" TV","").split(" ").slice(0,2).map(x=>x[0]).join("").toUpperCase();
-    b.innerHTML=`<span class="logo">${initials}</span><span><b>${c.name}</b><small>${c.url?"Canlı yayını aç":"Resmî yayın sayfası"}</small></span>`;
-    b.addEventListener("click",()=>play(c));grid.appendChild(b);
-  });
-}
-let selected=null;
-function play(c){
-  selected=c;document.getElementById("currentTitle").textContent=c.name;document.getElementById("placeholder").classList.add("hidden");render();
-  if(!c.url){statusEl.textContent="Bu kanal için listede yayın adresi yok. Resmî yayın sayfası açılıyor.";if(c.fallback)window.open(c.fallback,"_blank","noopener");return;}
-  statusEl.textContent="Yayın yükleniyor…";
-  if(hls){hls.destroy();hls=null;}video.pause();video.removeAttribute("src");video.load();
-  if(video.canPlayType("application/vnd.apple.mpegurl")){video.src=c.url;video.play().then(()=>statusEl.textContent="Canlı yayın oynatılıyor.").catch(()=>statusEl.textContent="Yayın başlamadı. Oynat düğmesine basın veya başka kanal deneyin.");}
-  else if(window.Hls&&Hls.isSupported()){hls=new Hls();hls.loadSource(c.url);hls.attachMedia(video);hls.on(Hls.Events.MANIFEST_PARSED,()=>video.play().then(()=>statusEl.textContent="Canlı yayın oynatılıyor.").catch(()=>statusEl.textContent="Oynat düğmesine basın."));hls.on(Hls.Events.ERROR,(_,data)=>{if(data.fatal)statusEl.textContent="Bu yayın şu anda açılamıyor. Başka bir kanal deneyin.";});}
-  else statusEl.textContent="Bu tarayıcı HLS yayınını desteklemiyor.";
-}
-async function init(){
-  const wanted=channelsWanted;
-  try{
-    const r=await fetch(PLAYLIST_URL,{cache:"no-store"});if(!r.ok)throw new Error("playlist");
-    const entries=parseM3U(await r.text());
-    allChannels=wanted.map(([name,category])=>{const match=findMatch(name,entries);return {name,category,url:match?.url||"",fallback:name==="NOW TV"?"https://www.nowtv.com.tr/canli-yayin":""};});
-    statusEl.textContent="Kanal listesi yüklendi. İzlemek için bir kanal seçin.";
-  }catch(e){
-    allChannels=wanted.map(([name,category])=>({name,category,url:"",fallback:name==="NOW TV"?"https://www.nowtv.com.tr/canli-yayin":""}));
-    statusEl.textContent="Kanal listesi yüklenemedi. İnternet bağlantınızı kontrol edin.";
-  }
-  render();
-}
-document.getElementById("search").addEventListener("input",render);
-document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-filter]");if(!b)return;activeFilter=b.dataset.filter;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render();});
-document.getElementById("fullBtn").addEventListener("click",()=>{const box=document.getElementById("videoBox");if(box.requestFullscreen)box.requestFullscreen();else if(video.webkitEnterFullscreen)video.webkitEnterFullscreen();});
-video.addEventListener("playing",()=>statusEl.textContent="Canlı yayın oynatılıyor.");
-video.addEventListener("error",()=>{if(selected?.url)statusEl.textContent="Yayın oynatılamadı. Kaynak kapalı veya tarayıcı tarafından engelleniyor olabilir.";});
-init();
+const channels=[
+["ATV HD","Ulusal","12207","H","27500","3/4","Türksat 4A","ATV"],
+["Kanal D HD","Ulusal","12245","H","27500","5/6","Türksat 4A","KD"],
+["Show TV HD","Ulusal","12303","V","27500","3/4","Türksat 4A","SHOW"],
+["Star TV HD","Ulusal","12015","H","27500","3/4","Türksat 4A","STAR"],
+["NOW HD","Ulusal","11887","V","10833","2/3","Türksat 4A","NOW"],
+["TV8 HD","Ulusal","11901","V","12500","2/3","Türksat 4A","TV8"],
+["Kanal 7 HD","Ulusal","12458","H","27500","2/3","Türksat 4A","K7"],
+["Beyaz TV HD","Ulusal","11996","V","27500","3/4","Türksat 4A","BEYAZ"],
+["a2","Ulusal","11996","V","27500","3/4","Türksat 4A","a2"],
+["360 TV HD","Eğlence","11862","V","16666","2/3","Türksat 4A","360"],
+["tv8,5 HD","Eğlence","11901","V","12500","2/3","Türksat 4A","8,5"],
+["TLC HD","Eğlence","12015","H","27500","3/4","Türksat 4A","TLC"],
+["DMAX HD","Eğlence","12015","H","27500","3/4","Türksat 4A","DMAX"],
+["Teve2 HD","Eğlence","12245","H","27500","5/6","Türksat 4A","teve2"],
+["CNBC-e","Eğlence","12245","H","27500","5/6","Türksat 4A","CNBC"],
+["TRT 1 HD","Ulusal","11794","V","30000","3/4","Türksat 4A","TRT1"],
+["TRT 2","Diğer","11958","V","27500","5/6","Türksat 4A","TRT2"],
+["TRT Haber","Haber","11958","V","27500","5/6","Türksat 4A","TRT H"],
+["TRT Spor HD","Spor","11794","V","30000","3/4","Türksat 4A","TRT S"],
+["TRT Belgesel HD","Belgesel","11794","V","30000","3/4","Türksat 4A","TRT B"],
+["TRT Çocuk HD","Çocuk","11794","V","30000","3/4","Türksat 4A","TRT Ç"],
+["TRT Diyanet Çocuk","Çocuk","11794","V","30000","3/4","Türksat 4A","DÇ"],
+["TRT 4K","Diğer","11767","V","15000","3/4","Türksat 4A","4K"],
+["A Haber","Haber","12207","H","27500","3/4","Türksat 4A","A HABER"],
+["NTV","Haber","12015","H","27500","3/4","Türksat 4A","NTV"],
+["CNN Türk","Haber","12034","V","27500","3/4","Türksat 4A","CNN"],
+["Habertürk HD","Haber","12303","V","27500","3/4","Türksat 4A","HT"],
+["Haber Global HD","Haber","12034","V","27500","3/4","Türksat 4A","HG"],
+["TGRT Haber","Haber","12380","V","27500","3/4","Türksat 4A","TGRT"],
+["24 HD","Haber","11862","V","16666","2/3","Türksat 4A","24"],
+["Sözcü TV","Haber","12111","V","27500","3/4","Türksat 6A","SZC"],
+["Halk TV HD","Haber","11225","V","30000","3/4","Türksat 5B","HALK"],
+["Bloomberg HT","Haber","12245","H","27500","5/6","Türksat 4A","BHT"],
+["TV100 HD","Haber","11225","V","30000","3/4","Türksat 5B","100"],
+["KRT TV HD","Haber","11996","V","27500","3/4","Türksat 4A","KRT"],
+["Flash Haber HD","Haber","11916","V","30000","3/4","Türksat 4A","FLASH"],
+["A Spor","Spor","12053","H","27500","5/6","Türksat 4A","A SPOR"],
+["TRT Spor Yıldız","Spor","11794","V","30000","3/4","Türksat 4A","TRT Y"],
+["TRT Müzik","Diğer","11794","V","30000","3/4","Türksat 4A","TRT M"],
+["Diyanet TV","Diğer","12379","V","27500","3/4","Türksat 4A","DİYANET"],
+["TRT Genç","Diğer","11794","V","30000","3/4","Türksat 4A","GENÇ"]
+].map(([name,category,freq,pol,sr,fec,sat,logo])=>({name,category,freq,pol,sr,fec,sat,logo}));
+const grid=document.getElementById("channelGrid"),search=document.getElementById("search"),count=document.getElementById("resultCount"),empty=document.getElementById("empty");let filter="Tümü";
+document.getElementById("totalCount").textContent=channels.length;
+function render(){const q=search.value.toLocaleLowerCase("tr-TR").trim();const list=channels.filter(c=>(filter==="Tümü"||c.category===filter)&&(!q||[c.name,c.freq,c.category,c.sat].join(" ").toLocaleLowerCase("tr-TR").includes(q)));grid.innerHTML="";count.textContent=list.length+" kanal gösteriliyor";empty.classList.toggle("hidden",list.length!==0);list.forEach(c=>{const card=document.createElement("article");card.className="channel";const logo=document.createElement("span");logo.className="logo";logo.textContent=c.logo;const info=document.createElement("span");const name=document.createElement("b");name.className="channel-name";name.textContent=c.name;const meta=document.createElement("small");meta.className="channel-meta";meta.textContent=c.category+" · "+c.sat;info.append(name,meta);const freq=document.createElement("span");freq.className="channel-freq";const f=document.createElement("b");f.textContent=c.freq+" MHz";const p=document.createElement("small");p.textContent=c.pol+" · SR "+c.sr;freq.append(f,p);const copy=document.createElement("button");copy.className="copy-btn";copy.textContent="FREKANS BİLGİSİNİ KOPYALA ↗";copy.addEventListener("click",async()=>{const value=c.name+" — "+c.sat+" — "+c.freq+" MHz "+c.pol+" — SR "+c.sr+" — FEC "+c.fec;try{await navigator.clipboard.writeText(value);copy.textContent="KOPYALANDI ✓";setTimeout(()=>copy.textContent="FREKANS BİLGİSİNİ KOPYALA ↗",1500)}catch{copy.textContent=value}});card.append(logo,info,freq,copy);grid.append(card)})}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-filter]");if(!b)return;filter=b.dataset.filter;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()});search.addEventListener("input",render);render();
