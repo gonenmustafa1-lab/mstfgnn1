@@ -1,30 +1,54 @@
 #EXTM3U
-# TV1 - Dış kaynaklardan güncellenen açık VOD film menüsü. SS IPTV iç içe oynatma listeleri.
+# TV1 - Genişletilmiş ücretsiz film arşivi.
+# Kaynaklar: Nexonic free VOD (Internet Archive açık lisans/kamu malı metadata), Archive Watch ve PublicDomainM3U.
+# Not: Kataloglar dış kaynakta güncellenir. Bazı başlıklar ülkeye göre telif farklılığı taşıyabilir; kaynak lisansı kontrol edilmelidir.
 
-#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",KOMEDİ - ücretsiz arşiv
+# --- 01 KLASİK VE TÜRLERE GÖRE FİLMLER ---
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",KOMEDİ
 https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/comedy.m3u
-#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",BİLİM KURGU
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/scifi.m3u
-#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",KORKU
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/horror.m3u
-#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",BELGESEL
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/documentary.m3u
-#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",FİLM NOIR
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",DRAM
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/drama.m3u
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",SUÇ
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/crime.m3u
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",GİZEM
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/mystery.m3u
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",NOIR
 https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/noir.m3u
-#EXTINF:0 type="playlist" group-title="02 - KISA / TARİHİ",SESSİZ SİNEMA
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/silent.m3u
-#EXTINF:0 type="playlist" group-title="02 - KISA / TARİHİ",ANİMASYON
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/animation.m3u
-#EXTINF:0 type="playlist" group-title="02 - KISA / TARİHİ",KISA FİLMLER
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/short.m3u
-#EXTINF:0 type="playlist" group-title="02 - KISA / TARİHİ",BİLİM KURGU + KORKU
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/scifi-horror.m3u
-#EXTINF:0 type="playlist" group-title="03 - DİĞER",MACERA
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/adventure.m3u
-#EXTINF:0 type="playlist" group-title="03 - DİĞER",SAVAŞ
-https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/war.m3u
-#EXTINF:0 type="playlist" group-title="03 - DİĞER",ROMANTİK
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",ROMANTİK
 https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/romance.m3u
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",WESTERN
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/western.m3u
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",MACERA
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/adventure.m3u
+#EXTINF:0 type="playlist" group-title="01 - KLASİK SİNEMA",SAVAŞ
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/war.m3u
 
-#EXTINF:0 type="playlist" group-title="04 - BAĞIMSIZ ARŞİV",PUBLIC DOMAIN M3U - açık arşiv filmleri
+# --- 02 BİLİM KURGU VE KORKU ---
+#EXTINF:0 type="playlist" group-title="02 - BİLİM KURGU / KORKU",BİLİM KURGU
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/scifi.m3u
+#EXTINF:0 type="playlist" group-title="02 - BİLİM KURGU / KORKU",KORKU
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/horror.m3u
+#EXTINF:0 type="playlist" group-title="02 - BİLİM KURGU / KORKU",BİLİM KURGU + KORKU
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/scifi-horror.m3u
+
+# --- 03 AİLE VE ANİMASYON ---
+#EXTINF:0 type="playlist" group-title="03 - AİLE / ANİMASYON",AİLE FİLMLERİ
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/family.m3u
+#EXTINF:0 type="playlist" group-title="03 - AİLE / ANİMASYON",ANİMASYON
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/animation.m3u
+#EXTINF:0 type="playlist" group-title="03 - AİLE / ANİMASYON",MÜZİKAL
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/musical.m3u
+
+# --- 04 BELGESEL VE KISA FİLMLER ---
+#EXTINF:0 type="playlist" group-title="04 - BELGESEL / KISA",BELGESEL
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/documentary.m3u
+#EXTINF:0 type="playlist" group-title="04 - BELGESEL / KISA",KISA FİLMLER
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/short.m3u
+#EXTINF:0 type="playlist" group-title="04 - BELGESEL / KISA",SESSİZ SİNEMA
+https://raw.githubusercontent.com/Shahrukhalid/nexonic-iptv/main/playlists/vod/genres/silent.m3u
+
+# --- 05 EK ARŞİVLER ---
+#EXTINF:0 type="playlist" group-title="05 - EK ARŞİVLER",ARCHIVE WATCH - BÜYÜK KLASİK FİLM / TV ARŞİVİ
+https://archivewatch.org/feeds/archivewatch.m3u
+#EXTINF:0 type="playlist" group-title="05 - EK ARŞİVLER",PUBLIC DOMAIN M3U - AÇIK KLASİK FİLMLER
 https://raw.githubusercontent.com/OnlineM3U/publicdomainm3u/main/movies.m3u
