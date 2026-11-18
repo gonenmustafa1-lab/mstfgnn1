@@ -1,5 +1,5 @@
 #EXTM3U
-# TV1 - Ücretsiz spor kanalları; Nexonic kaynağında resmi yayıncı akışları ve ülke kısıtları olabilir
+# Nexonic official-tier sports streams + TV1's free Turkish sports sources
 #EXTINF:-1 tvg-name="TRT Spor Yıldız" group-title="SPOR / TÜRKİYE",TRT Spor Yıldız
 https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
 #EXTINF:-1 tvg-name="A Spor" group-title="SPOR / TÜRKİYE",A Spor
