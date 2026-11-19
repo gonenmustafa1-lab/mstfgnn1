@@ -1,0 +1,22 @@
+{
+  "name": "mustafa-tv",
+  "version": "1.0.0",
+  "description": "Mustafa TV - M3U canlı yayın oynatıcı",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "tr.mustafatv.player",
+    "productName": "Mustafa TV",
+    "directories": { "output": "dist" },
+    "files": ["main.cjs", "index.html", "package.json"],
+    "win": { "target": ["nsis", "portable"], "artifactName": "Mustafa-TV-${version}-${arch}.${ext}" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}
