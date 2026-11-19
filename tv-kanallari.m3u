@@ -87,3 +87,5 @@ https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8
 https://nowtv.daioncdn.net/nowtv/nowtv.m3u8
 #EXTINF:-1 tvg-name="NOW TEST 6 - TVCDN" group-title="00 - NOW TEST",NOW TEST 6 - TVCDN
 http://stream.tvcdn.net/ulusal/now-tv.m3u8
+#EXTINF:-1 tvg-name="NOW TEST 7 - FOXTV TR" group-title="00 - NOW TEST",NOW TEST 7 - FOXTV TR
+http://116.202.238.88/FOXTV_TR/index.m3u8
