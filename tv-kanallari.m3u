@@ -81,3 +81,7 @@ https://streams.uzunmuhalefet.com/stream/f9368c57-16e5-44a2-a559-46377a476b04.m3
 https://trn03.tulix.tv/gt-fox-turk-tv/index.m3u8
 #EXTINF:-1 tvg-name="NOW TEST 3 - BozzTV" group-title="00 - NOW TEST",NOW TEST 3 - BozzTV
 https://bozztv.com/inim03/live1/turkfoxtv/playlist.m3u8
+#EXTINF:-1 tvg-name="NOW TEST 4 - ERCdn" group-title="00 - NOW TEST",NOW TEST 4 - ERCdn
+https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8
+#EXTINF:-1 tvg-name="NOW TEST 5 - DAIOnCDN" group-title="00 - NOW TEST",NOW TEST 5 - DAIOnCDN
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8
