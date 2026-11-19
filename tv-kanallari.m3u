@@ -12,7 +12,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="Star TV" group-title="01 - Ulusal",Star TV
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
 #EXTINF:-1 tvg-id="NOW.tr" tvg-name="NOW" group-title="01 - Ulusal",NOW
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_480p.m3u8
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8" group-title="01 - Ulusal",TV8
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="Kanal 7" group-title="01 - Ulusal",Kanal 7
@@ -73,19 +73,3 @@ https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 https://powerturk.blutv.com/blutv_powerturk/powerturk_sd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Number1TV.tr" tvg-name="Number One TV" group-title="06 - Müzik",Number One TV
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8
-
-# NOW TV - herkese açık listelerde bulunan alternatif HLS adresleri; çalışma garantisi yoktur
-#EXTINF:-1 tvg-name="NOW TEST 1 - Alternatif HLS" group-title="00 - NOW TEST",NOW TEST 1 - Alternatif HLS
-https://streams.uzunmuhalefet.com/stream/f9368c57-16e5-44a2-a559-46377a476b04.m3u8
-#EXTINF:-1 tvg-name="NOW TEST 2 - Tulix" group-title="00 - NOW TEST",NOW TEST 2 - Tulix
-https://trn03.tulix.tv/gt-fox-turk-tv/index.m3u8
-#EXTINF:-1 tvg-name="NOW TEST 3 - BozzTV" group-title="00 - NOW TEST",NOW TEST 3 - BozzTV
-https://bozztv.com/inim03/live1/turkfoxtv/playlist.m3u8
-#EXTINF:-1 tvg-name="NOW TEST 4 - ERCdn" group-title="00 - NOW TEST",NOW TEST 4 - ERCdn
-https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8
-#EXTINF:-1 tvg-name="NOW TEST 5 - DAIOnCDN" group-title="00 - NOW TEST",NOW TEST 5 - DAIOnCDN
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8
-#EXTINF:-1 tvg-name="NOW TEST 6 - TVCDN" group-title="00 - NOW TEST",NOW TEST 6 - TVCDN
-http://stream.tvcdn.net/ulusal/now-tv.m3u8
-#EXTINF:-1 tvg-name="NOW TEST 7 - FOXTV TR" group-title="00 - NOW TEST",NOW TEST 7 - FOXTV TR
-http://116.202.238.88/FOXTV_TR/index.m3u8
